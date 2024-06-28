@@ -1,0 +1,239 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "faa",
+				"abbreviation": "FAA",
+				"full": "Friks Automaton Attachments beta",
+				"version": "0.01",
+				"authors": [
+					"Frik"
+				],
+				"color": "02f7eb"
+				
+			}
+			
+		],
+		"dateAdded" : 1715530429,
+		"dateLastModified": 1715530499
+	},
+	"optionalfeature": [
+		{
+			"name": "Attaching",
+			"source": "faa",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Construct"
+				}
+			],
+			"featureType": [
+				"OTH"
+			],
+			"entries": [
+				"As an automaton you can modify yourself with complex {@filter attachments|items|source=faa|type=ATTM}.",
+				"Without attaching such an item to yourself, you are unable to use its special properties, unless stated otherwise in the attachments item description",
+				"Attaching or unattaching an item requires you to spend 10 minutes using {@item tinker's tools|PHB} to modify yourself, unless stated otherwise in the attachments item description.",
+				"This activity cannot be performed during a short or long rest, as it is considered a strenuous activity."
+			]
+		}
+	],
+	"itemType": [
+		{
+			"abbreviation": "ATTM",
+			"source": "faa",
+			"name": "Automaton Attachment",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Attachment",
+					"entries": [
+						"This item has been modified to attach to an automaton, see {@optfeature Attaching|FAA} for more."
+					]
+				}
+			]
+		}
+	],
+
+	"item": [
+		{
+	"name": "Harpoon Gun",
+	"type": "R",
+	"weaponCategory": "martial",
+	"source": "faa",
+	"rarity": "rare",
+	"weight": 15,
+	"value": 9000,
+	"property": [
+		"A",
+		"LD",
+		"S"
+	],
+	"range": "30/120",
+	"dmg1": "1d8",
+	"dmgType": "P",
+	"ammoType": "Harpoon Spear|FAA",
+	"entries": [
+		"A harpoon gun made for firing {@item Harpoon Spear|FAA}.",
+		"{@bold Special.} As part of your ranged attack made with the harpoon you may choose to tether yourself with a rope to the creature or object you hit; otherwise, you can pull the harpoon back to yourself as an object interaction.\n You need to use both hands to pull back the harpoon. If you choose to tether yourself, the hand you used to make the attack becomes occupied maintaining the tether. You cannot maintain multiple tethers in one hand, and creatures immune to the {@condition grappled} condition cannot be tethered.",
+		"Once per turn, you can make an opposed Strength check against a creature you have tethered (no action required). On a success, you can drag the tethered creature towards you using both hands. Doing so uses up 5 feet of movement for every 5 feet you drag it unless the creature is two or more sizes smaller than you.\n A tethered creature can attempt to do the same to you on its turn, though if you fail the opposed Strength check, you can choose to drop the tether rather than be dragged by it.\n Any time an opposed Strength check is made between you and a tethered creature, if both of you roll a 12 or higher on this check, the tether snaps.",
+		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d8} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
+		"If you recover a harpoon spear or a harpoon gun bolt with a snapped rope, you can replace the rope over 10 minutes, using 1gp worth of rope and other supplies.\n This can be done over the course of a short or long rest."
+	]
+},
+
+{
+	"name": "Harpoon Gun Attachment",
+	"baseItem": "Harpoon Gun|FAA",
+	"type": "ATTM",
+	"weaponCategory": "ranged",
+	"source": "faa",
+	"rarity": "very rare",
+	"weight": 20,
+	"value": 13500,
+	"property": [
+		"A",
+		"LD",
+		"S"
+	],
+	"range": "30/120",
+	"dmg1": "1d8",
+	"dmgType": "P",
+	"ammoType": "Harpoon Spear|FAA",
+	"entries": [
+		"This {@item Harpoon Gun|FAA} has been modified to attach to an automaton.",
+		"{@bold Special.} As part of your ranged attack made with the harpoon you may choose to tether yourself with a rope to the creature or object you hit; otherwise, you can pull the harpoon back to yourself as an object interaction.\n You need to use both hands to pull back the harpoon. If you choose to tether yourself, the hand you used to make the attack becomes occupied maintaining the tether. You cannot maintain multiple tethers in one hand, and creatures immune to the {@condition grappled} condition cannot be tethered.",
+		"Once per turn, you can make an opposed Strength check against a creature you have tethered (no action required). On a success, you can drag the tethered creature towards you using both hands. Doing so uses up 5 feet of movement for every 5 feet you drag it unless the creature is two or more sizes smaller than you.\n A tethered creature can attempt to do the same to you on its turn, though if you fail the opposed Strength check, you can choose to drop the tether rather than be dragged by it.\n Any time an opposed Strength check is made between you and a tethered creature, if both of you roll a 12 or higher on this check, the tether snaps.",
+		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d8} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
+		"If you recover a harpoon spear or a harpoon gun bolt with a snapped rope, you can replace the rope over 10 minutes, using 1gp worth of rope and other supplies.\n This can be done over the course of a short or long rest."
+	]
+},
+
+{
+	"name": "Net Gun",
+	"type": "R",
+	"weaponCategory": "martial",
+	"source": "faa",
+	"rarity": "rare",
+	"weight": 15,
+	"value": 7500,
+	"property": [
+		"A",
+		"LD",
+		"S"
+	],
+	"range": "20/40",
+	"ammoType": "Net|PHB",
+	"entries": [
+		"This Device is used to fire a {@item net|PHB}.",
+		"{@bold Special.} Firing a {@item net|PHB} from this, allows you to still use your remaining attacks, despite the limitations normally imposed by throwing a net."
+	]
+},
+
+{
+	"name": "Net Gun Attachment",
+	"type": "ATTM",
+	"baseItem": "Net Gun|FAA",
+	"weaponCategory": "ranged",
+	"source": "faa",
+	"rarity": "very rare",
+	"weight": 20,
+	"value": 10000,
+	"property": [
+		"A",
+		"LD",
+		"S"
+	],
+	"range": "20/40",
+	"ammoType": "Net|PHB",
+	"entries": [
+		"This arm replacement is used to fire a {@item net|PHB}, it attaches to an automaton.",
+		"{@bold Special.} Firing a {@item net|PHB} from this, allows you to still use your remaining attacks, despite the limitations normally imposed by throwing a net."
+	]
+},
+
+{
+	"name": "Harpoon Spear",
+	"type": "A",
+	"weaponCategory": "melee",
+	"dmg1": "1d6",
+	"dmg2": "1d8",
+	"dmgType": "P",
+	"source": "faa",
+	"rarity": "common",
+	"weight": 4,
+	"value": 1000,
+	"property": [
+		"T",
+		"V"
+	],
+	"range": "15/30",
+	"entries": [
+		"This Spear is designed to be fired from a {@item Harpoon Gun Attachment|FAA}"
+		
+	]
+},
+
+{
+	"name": "Swiftstrike Bracer Attachment",
+	"type": "ATTM",
+	"baseItem": "Swiftstrike Bracer|FAA",
+	"weaponCategory": "melee",
+	"source": "faa",
+	"rarity": "very rare",
+	"weight": 2,
+	"value": 22500,
+	"bonusWeapon": "+1",
+	"property": [
+		"S"
+	],
+	"entries": [
+		"This device can be attached to the arm of an automaton.",
+		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
+		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
+		{
+			"type": "list",
+			"items": [
+				"+1 to attack rolls.",
+				"You cannot drop the weapon or be disarmed.",
+				"Drawing or stowing the weapon does not require an action.",
+				"While stowed the weapon is considered hidden."
+				
+			]
+		}
+			]
+		},
+
+{
+	"name": "Swiftstrike Bracer",
+	"type": "M",
+	"source": "faa",
+	"rarity": "very rare",
+	"weight": 2,
+	"value": 15000,
+	"bonusWeapon": "+1",
+	"property": [
+		"S"
+	],
+	"entries": [
+		"This device can be attached to the arm of a humanoid creature.",
+		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
+		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
+		{
+			"type": "list",
+			"items": [
+				"+1 to attack rolls.",
+				"You cannot drop the weapon or be disarmed.",
+				"Drawing or stowing the weapon does not require an action.",
+				"While stowed the weapon is considered hidden."
+				
+			]
+		}
+			]
+		}
+		
+	]
+}
