@@ -75,7 +75,7 @@
 	"dmgType": "P",
 	"ammoType": "Harpoon Spear|FAA",
 	"entries": [
-		"A harpoon gun made for firing {@item Harpoon Spear|FAA}.lllllllllllllllllllllllllll",
+		"A harpoon gun made for firing {@item Harpoon Spear|FAA}.",
 		"{@bold Special.} As part of your ranged attack made with the harpoon you may choose to tether yourself with a rope to the creature or object you hit; otherwise, you can pull the harpoon back to yourself as an object interaction.\n You need to use both hands to pull back the harpoon. If you choose to tether yourself, the hand you used to make the attack becomes occupied maintaining the tether. You cannot maintain multiple tethers in one hand, and creatures immune to the {@condition grappled} condition cannot be tethered.",
 		"Once per turn, you can make an opposed Strength check against a creature you have tethered (no action required). On a success, you can drag the tethered creature towards you using both hands. Doing so uses up 5 feet of movement for every 5 feet you drag it unless the creature is two or more sizes smaller than you.\n A tethered creature can attempt to do the same to you on its turn, though if you fail the opposed Strength check, you can choose to drop the tether rather than be dragged by it.\n Any time an opposed Strength check is made between you and a tethered creature, if both of you roll a 12 or higher on this check, the tether snaps.",
 		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d8} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
