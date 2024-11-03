@@ -5,7 +5,7 @@
 				"json": "faa",
 				"abbreviation": "FAA",
 				"full": "Friks Automaton Attachments beta",
-				"version": "1.1",
+				"version": "2.0",
 				"authors": [
 					"Frik"
 				],
@@ -15,7 +15,7 @@
 			
 		],
 		"dateAdded" : 1715530429,
-		"dateLastModified": 1719598825
+		"dateLastModified": 1730640128
 	},
 	"optionalfeature": [
 		{
@@ -33,8 +33,7 @@
 			"entries": [
 				"As an automaton you can modify yourself with complex {@filter attachments|items|source=faa|type=ATTM}.",
 				"Without attaching such an item to yourself, you are unable to use its special properties, unless stated otherwise in the attachments item description",
-				"Attaching or unattaching an item requires you to spend 10 minutes using {@item tinker's tools|PHB} to modify yourself, unless stated otherwise in the attachments item description.",
-				"This activity cannot be performed during a short or long rest, as it is considered a strenuous activity."
+				"Attaching or unattaching an item requires an action, unless stated otherwise in the attachments item description."
 			]
 		}
 	],
@@ -189,14 +188,14 @@
 		"S"
 	],
 	"entries": [
-		"This device can be attached to the arm of an automaton.",
-		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
-		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"This device can be attached to the arm of an automaton. You can use this bracer to hold a weapon that does not have the heavy or two-handed property. The bracer uses spring mechanisms to instantly retract or extend the weapon.",
+		"You can flick your wrist (no action required), to retract the armblade into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes.",
+		"Switching the attached weapon is a delicate process and takes time (as if attuning to a magical item)",
 		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
 		{
 			"type": "list",
 			"items": [
-				"+1 to attack rolls.",
+				"+1 to attack and damage rolls.",
 				"You cannot drop the weapon or be disarmed.",
 				"Drawing or stowing the weapon does not require an action.",
 				"While stowed the weapon is considered hidden."
@@ -219,13 +218,13 @@
 	],
 	"entries": [
 		"This device can be attached to the arm of a humanoid creature.",
-		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
-		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"You can flick your wrist (no action required), to retract the armblade into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes.",
+		"Switching the attached weapon is a delicate process and takes time (as if attuning to a magical item)",
 		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
 		{
 			"type": "list",
 			"items": [
-				"+1 to attack rolls.",
+				"+1 to attack and damage rolls.",
 				"You cannot drop the weapon or be disarmed.",
 				"Drawing or stowing the weapon does not require an action.",
 				"While stowed the weapon is considered hidden."
