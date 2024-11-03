@@ -5,7 +5,7 @@
 				"json": "faa",
 				"abbreviation": "FAA",
 				"full": "Friks Automaton Attachments",
-				"version": "1.0",
+				"version": "2.0",
 				"authors": [
 					"Frik"
 				],
@@ -15,7 +15,7 @@
 			
 		],
 		"dateAdded" : 1715530429,
-		"dateLastModified": 1715605883
+		"dateLastModified": 1730640128
 	},
 	"optionalfeature": [
 		{
@@ -33,8 +33,7 @@
 			"entries": [
 				"As an automaton you can modify yourself with complex {@filter attachments|items|source=faa|type=ATTM}.",
 				"Without attaching such an item to yourself, you are unable to use its special properties, unless stated otherwise in the attachments item description",
-				"Attaching or unattaching an item requires you to spend 10 minutes using {@item tinker's tools|PHB} to modify yourself, unless stated otherwise in the attachments item description.",
-				"This activity cannot be performed during a short or long rest, as it is considered a strenuous activity."
+				"Attaching or unattaching an item requires an action, unless stated otherwise in the attachments item description."
 			]
 		}
 	],
@@ -71,14 +70,14 @@
 		"S"
 	],
 	"range": "30/120",
-	"dmg1": "1d8",
+	"dmg1": "1d10",
 	"dmgType": "P",
 	"ammoType": "Harpoon Spear|FAA",
 	"entries": [
 		"A harpoon gun made for firing {@item Harpoon Spear|FAA}.",
 		"{@bold Special.} As part of your ranged attack made with the harpoon you may choose to tether yourself with a rope to the creature or object you hit; otherwise, you can pull the harpoon back to yourself as an object interaction.\n You need to use both hands to pull back the harpoon. If you choose to tether yourself, the hand you used to make the attack becomes occupied maintaining the tether. You cannot maintain multiple tethers in one hand, and creatures immune to the {@condition grappled} condition cannot be tethered.",
 		"Once per turn, you can make an opposed Strength check against a creature you have tethered (no action required). On a success, you can drag the tethered creature towards you using both hands. Doing so uses up 5 feet of movement for every 5 feet you drag it unless the creature is two or more sizes smaller than you.\n A tethered creature can attempt to do the same to you on its turn, though if you fail the opposed Strength check, you can choose to drop the tether rather than be dragged by it.\n Any time an opposed Strength check is made between you and a tethered creature, if both of you roll a 12 or higher on this check, the tether snaps.",
-		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d8} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
+		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d6} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
 		"If you recover a harpoon spear or a harpoon gun bolt with a snapped rope, you can replace the rope over 10 minutes, using 1gp worth of rope and other supplies.\n This can be done over the course of a short or long rest."
 	]
 },
@@ -98,14 +97,14 @@
 		"S"
 	],
 	"range": "30/120",
-	"dmg1": "1d8",
+	"dmg1": "1d10",
 	"dmgType": "P",
 	"ammoType": "Harpoon Spear|FAA",
 	"entries": [
 		"This {@item Harpoon Gun|FAA} has been modified to attach to an automaton.",
 		"{@bold Special.} As part of your ranged attack made with the harpoon you may choose to tether yourself with a rope to the creature or object you hit; otherwise, you can pull the harpoon back to yourself as an object interaction.\n You need to use both hands to pull back the harpoon. If you choose to tether yourself, the hand you used to make the attack becomes occupied maintaining the tether. You cannot maintain multiple tethers in one hand, and creatures immune to the {@condition grappled} condition cannot be tethered.",
 		"Once per turn, you can make an opposed Strength check against a creature you have tethered (no action required). On a success, you can drag the tethered creature towards you using both hands. Doing so uses up 5 feet of movement for every 5 feet you drag it unless the creature is two or more sizes smaller than you.\n A tethered creature can attempt to do the same to you on its turn, though if you fail the opposed Strength check, you can choose to drop the tether rather than be dragged by it.\n Any time an opposed Strength check is made between you and a tethered creature, if both of you roll a 12 or higher on this check, the tether snaps.",
-		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d8} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
+		"Any creature within 5 feet of a tethered creature (including the tethered creature) can use an action to remove the harpoon. Doing so deals an additional {@dice 1d6} weapon damage to the creature as the harpoon is removed.\n Dealing 5 slashing damage to the tether (AC 10) also snaps it.",
 		"If you recover a harpoon spear or a harpoon gun bolt with a snapped rope, you can replace the rope over 10 minutes, using 1gp worth of rope and other supplies.\n This can be done over the course of a short or long rest."
 	]
 },
@@ -189,14 +188,14 @@
 		"S"
 	],
 	"entries": [
-		"This device can be attached to the arm of an automaton.",
-		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
-		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"This device can be attached to the arm of an automaton. You can use this bracer to hold a weapon that does not have the heavy or two-handed property. The bracer uses spring mechanisms to instantly retract or extend the weapon.",
+		"You can flick your wrist (no action required), to retract the armblade into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes.",
+		"Switching the attached weapon is a delicate process and takes time (as if attuning to a magical item)",
 		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
 		{
 			"type": "list",
 			"items": [
-				"+1 to attack rolls.",
+				"+1 to attack and damage rolls.",
 				"You cannot drop the weapon or be disarmed.",
 				"Drawing or stowing the weapon does not require an action.",
 				"While stowed the weapon is considered hidden."
@@ -210,7 +209,7 @@
 	"name": "Swiftstrike Bracer",
 	"type": "M",
 	"source": "faa",
-	"rarity": "very rare",
+	"rarity": "rare",
 	"weight": 2,
 	"value": 15000,
 	"bonusWeapon": "+1",
@@ -219,19 +218,57 @@
 	],
 	"entries": [
 		"This device can be attached to the arm of a humanoid creature.",
-		"While attached the device can hold a weapon that does not have the heavy or two-handed property. The creatue can still use its arm and hand normally even if a weapon is attached",
-		"Switching the attached weapon should be done by a professional. If a creature lacks the proper knowledge the device may not function correctly. The drawbacks (if any) are at the DMs discretion.",
+		"You can flick your wrist (no action required), to retract the armblade into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes.",
+		"Switching the attached weapon is a delicate process and takes time (as if attuning to a magical item)",
 		"{@bold Special.} A weapon used as a {@italic Retractable Blade} has the following additional properties:",
 		{
 			"type": "list",
 			"items": [
-				"+1 to attack rolls.",
+				"+1 to attack and damage rolls.",
 				"You cannot drop the weapon or be disarmed.",
 				"Drawing or stowing the weapon does not require an action.",
 				"While stowed the weapon is considered hidden."
 				
 			]
 		}
+			]
+		},
+		{
+			"name": "Grappling Gun Attachment",
+			"type": "ATTM",
+			"source": "faa",
+			"rarity": "very rare",
+			"weight": 5,
+			"value": 15000,
+			"property": [
+				"S"
+			],
+			"range": "60",
+			"entries": [
+				"This wrist-mounted gadget can be activated as an action on your turn, firing out a reinforced cable onto a target surface within 60 feet of you.",
+				"Make a Dexterity check. You can add your proficiency bonus to this roll if you have proficiency with one of the following: Tinker’s Tools, Thieves’ Tools, or Mason’s Tools.",
+				"On a result equal to or higher than the structure’s AC (see {@table Object Armor Class|DMG}), the cable latches itself to the specified point, allowing you to swing across gaps or possibly climb steep walls.",
+				"You can have the cable detach itself from a surface as a bonus action, returning it to your device.",
+				"Additionally, you may choose to recall the cable without detaching it, pulling you towards the targeted surface before retracting completely. If the targeted surface is a Medium or smaller object, it is pulled towards you instead."
+			]
+		},
+		{
+			"name": "Grappling Gun",
+			"type": "G",
+			"source": "faa",
+			"rarity": "rare",
+			"weight": 5,
+			"value": 10000,
+			"property": [
+				"S"
+			],
+			"range": "60",
+			"entries": [
+				"This wrist-mounted gadget can be activated as an action on your turn, firing out a reinforced cable onto a target surface within 60 feet of you.",
+				"Make a Dexterity check. You can add your proficiency bonus to this roll if you have proficiency with one of the following: Tinker’s Tools, Thieves’ Tools, or Mason’s Tools.",
+				"On a result equal to or higher than the structure’s AC (see {@table Object Armor Class|DMG}), the cable latches itself to the specified point, allowing you to swing across gaps or possibly climb steep walls.",
+				"You can have the cable detach itself from a surface as a bonus action, returning it to your device.",
+				"Additionally, you may choose to recall the cable without detaching it, pulling you towards the targeted surface before retracting completely. If the targeted surface is a Medium or smaller object, it is pulled towards you instead."
 			]
 		}
 		
