@@ -5,7 +5,7 @@
 				"json": "faa",
 				"abbreviation": "FAA",
 				"full": "Friks Automaton Attachments",
-				"version": "2.0",
+				"version": "2.1",
 				"authors": [
 					"Frik"
 				],
@@ -15,8 +15,227 @@
 			
 		],
 		"dateAdded" : 1715530429,
-		"dateLastModified": 1730640128
+		"dateLastModified": 1741199128
 	},
+
+"spell": [
+		{
+			"name": "Glitterdust",
+			"source": "faa",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a pinch of powdered gold or silver"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "turn",
+						"amount": 4
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A cloud of glittering particles appears around a point you can see within range.",
+				"Each object in a 10-foot-radius sphere within range is outlined in colorful light (your choice of color). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 5-foot radius.",
+				"Additionally affected creatures or objects can't benefit from being invisible.",
+                "Creatures that fail their saving throw are also {@condition blinded} for the duration.",
+                "At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends for it."
+			],
+			
+			"classes": {
+				"fromClassListVariant": [
+					{
+						"name": "Wizard",
+						"source": "PHB",
+						"definedInSource": "faa"
+					}
+				]
+			},
+
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution",
+                "dexterity"
+			]
+
+		},
+
+        {
+			"name": "Vocalize",
+			"source": "faa",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+                "m":"a small golden bell without a clapper"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],      
+
+            "meta": {
+                "ritual": true
+            },
+
+			"entries": [
+				"You touch one willing creature. While this spell is active, the target is able to cast spells that normally require a verbal component without the caster needing to make a sound.",  
+                "Such spells must be cast within the duration of the vocalize spell."
+				
+			],
+			
+			"classes": {
+				"fromClassListVariant": [
+					{
+						"name": "Wizard",
+						"source": "PHB",
+						"definedInSource": "faa"
+					}
+				]
+			}
+
+		},
+
+        {
+			"name": "Mykiel's Magic Missile",
+			"source": "faa",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create four glowing darts of magical force. All darts hit one creature of your choice that you can see within range. A dart deals {@damage 1d4+1} force damage to its target. The darts all strike the target simultaneously."
+			],
+			
+			"classes": {
+				"fromClassListVariant": [
+					{
+						"name": "Wizard",
+						"source": "PHB",
+						"definedInSource": "faa"
+					}
+				]
+			},
+
+            "damageInflict": [
+				"force"
+			]
+
+		},
+
+		{
+			"name": "Minoletta's Shield",
+			"source": "faa",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+                    "condition": "which you take when you are hit by an attack or a harmful effect that requires a saving thrown, from the front or targeted by the {@spell magic missile} spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "turn",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"An invisible barrier appears in front of you and protects you.",
+                "Until the spell ends, you have a +3 bonus to AC and a +1 bonus to saving throws against attacks that are basically frontal, including against the triggering attack, and you take no damage from {@spell magic missile}.",
+                "These benefits apply only if the attacks originate from in front of you, where the shield can move to interpose itself."
+			],
+			
+			"classes": {
+				"fromClassListVariant": [
+					{
+						"name": "Wizard",
+						"source": "PHB",
+						"definedInSource": "faa"
+					}
+				]
+			}
+
+		}
+
+
+
+
+
+    ],
+
 	"optionalfeature": [
 		{
 			"name": "Attaching",
