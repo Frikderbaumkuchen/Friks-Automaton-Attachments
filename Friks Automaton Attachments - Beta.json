@@ -2,10 +2,10 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "faa",
+				"json": "FriksAutomatonAttachmentsBeta",
 				"abbreviation": "FAA",
 				"full": "Friks Automaton Attachments beta",
-				"version": "2.1",
+				"version": "2.2",
 				"authors": [
 					"Frik"
 				],
@@ -15,10 +15,123 @@
 			
 		],
 		"dateAdded" : 1715530429,
-		"dateLastModified": 1741199128
+		"dateLastModified": 1744406125
 	},
 
 "spell": [
+
+	{
+		"name": "Distort Weave",
+		"source": "faa",
+		"level": 4,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			
+			"distance": {
+				"type": "feet",
+				"amount": 60
+				
+			}
+		},
+		"components": {
+			"s": true
+
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "round",
+					"amount": 1
+				}
+			}
+		],
+		"entries": [
+			"You tap into the magical flow of reality, creating an unstable field in a 10-foot radius centered on a point you can see within range. The field causes reality to shimmer and twist unpredictably.",
+			"While the field is active:",
+			"A creature concentrating on a spell within the field must succeed on a Constitution saving throw (DC equal to your spell save DC). On a failure, the creature's concentration is considered broken while within in the field.",
+			"Whenever a creature casts a spell while inside the field, roll {@dice 1d10} on the Table below. The creature is immediately affected by the result.",
+			"The field last until the end of your next turn.",
+			{
+				"type": "table",
+				"colStyles": [
+				  "col-2 text-center",
+				  "col-10"
+				],
+				"colLabels": [
+				  "d10",
+				  "Distort Weave Effect"
+				],
+				"rows": [
+				  [
+					"1",
+					"Arcane Backlash: The caster takes 2d6 force damage as the Weave lashes out."
+				  ],
+				  [
+					"2",
+					"Spell Echo: The spell is cast twice, targeting the same target(s) again. Concentration spells only affect the first target."
+				  ],
+				  [
+					"3",
+					"Inverted Effect: The spell’s effect is reversed (e.g., healing becomes necrotic damage, fire becomes cold). DM decides specifics."
+				  ],
+				  [
+					"4",
+					"Temporal Glitch: The caster loses their next reaction and their movement is halved until the end of their next turn."
+				  ],
+				  [
+					"5",
+					"Spell Fade: The spell fizzles harmlessly. The slot is still consumed."
+				  ],
+				  [
+					"6",
+					"Weave Feedback: All creatures within 5 feet of the caster take 1d6 lightning damage."
+				  ],
+				  [
+					"7",
+					"Surge of Power: The spell is cast at one level higher than the slot used (without consuming a higher slot)."
+				  ],
+				  [
+					"8",
+					"Unstable Concentration: If the spell requires concentration, the caster must immediately make a concentration check (DC 10 + spell level) or it ends."
+				  ],
+				  [
+					"9",
+					"Weird Warp: Roll on the {@table Wild Magic Surge|phb} table instead."
+				  ],
+				  [
+					"10",
+					"Controlled Chaos: The caster may choose to ignore the table this time — they’ve briefly stabilized the Weave."
+				  ]
+				]
+			  }
+		],
+		
+		"classes": {
+			"fromClassListVariant": [
+				{
+					"name": "Wizard",
+					"source": "PHB",
+					"definedInSource": "faa"
+				}
+			]
+		},
+
+		"savingThrow": [
+			"constitution"
+			
+		]
+
+	},
+
+
 		{
 			"name": "Glitterdust",
 			"source": "faa",
@@ -45,7 +158,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "turn",
+						"type": "round",
 						"amount": 4
 					},
 					"concentration": true
@@ -206,7 +319,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "turn",
+						"type": "round",
 						"amount": 5
 					},
 					"concentration": true
