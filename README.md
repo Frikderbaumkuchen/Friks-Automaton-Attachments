@@ -4,7 +4,7 @@ This Repository contains Attachments for an Automaton (e.g. Autognome, Warforged
 
 I own nothing here. I copied things I found online and modified them to fit my needs.
 
-I only use this repository for our personal Campaign. If you want you stuff removed, please contact me.
+I only use this repository for our personal Campaign. If you want your stuff removed, please contact me.
 
 Grappling Gun by [CamunonZ](https://www.reddit.com/r/DnD/comments/yonu1h/art_item_wristmounted_grappling_hook_a_wacky_but/)
 
